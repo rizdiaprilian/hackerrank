@@ -21,3 +21,9 @@ def count_substring(string, sub_string):
         if string[i:i+len(sub_string)] == sub_string:
             result += 1
     return result
+
+### Text wrapping
+import textwrap
+
+def wrap(string, max_width):
+    return textwrap.fill(string, max_width)
