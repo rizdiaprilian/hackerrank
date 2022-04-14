@@ -7,3 +7,9 @@ def mutate_string(string, position, character):
 ### Swap Case
 def swap_case(s):
     return s.swapcase()
+
+### String split and join
+def split_and_join(line):
+    line = line.split(" ")
+    line = "-".join(line)
+    return line
