@@ -13,3 +13,11 @@ def split_and_join(line):
     line = line.split(" ")
     line = "-".join(line)
     return line
+
+### Find a string
+def count_substring(string, sub_string):
+    result = 0
+    for i in range(len(string)):
+        if string[i:i+len(sub_string)] == sub_string:
+            result += 1
+    return result
